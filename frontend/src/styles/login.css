@@ -1,0 +1,61 @@
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.forgot-password-link {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #666666;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.forgot-password-link:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.social-login-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+    color: #aaaaaa;
+    font-size: 0.85rem;
+}
+
+.social-login-divider::before,
+.social-login-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.social-login-divider span {
+    padding: 0 15px;
+}
+
+.google-login-btn {
+    width: 100%;
+    background-color: #fcfcfb;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    padding: 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.google-login-btn:hover {
+    background-color: #f0f0f0;
+}

@@ -1,0 +1,118 @@
+.category-section {
+    padding: 60px 20px;
+    background-color: #f6f4ee;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.category-title {
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+
+.category-title i {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.view-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: opacity 0.2s ease;
+    margin-bottom: 5px;
+}
+
+.view-all-link:hover {
+    opacity: 0.6;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.category-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3/4; 
+    background-color: #e0e0e0;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease; 
+}
+
+.category-card:hover .category-image {
+    transform: scale(1.05); 
+}
+
+.category-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; 
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+.category-info {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.category-count {
+    color: #ffffff;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.category-name {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .category-section {
+        padding: 80px 40px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr); /* Expands to 3 columns */
+        gap: 30px;
+    }
+}
