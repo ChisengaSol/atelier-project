@@ -2,6 +2,10 @@
 
 This is a full-stack e-commerce web application which provides a seamless shopping experience for customers to browse and purchase clothing, paired with a secure administrative dashboard for staff to manage the entire business operation.
 
+> 🎬 Click the thumbnail below to watch the demo video.
+
+[![Atelier Demo Video](https://img.youtube.com/vi/d1BQwCND6-o/maxresdefault.jpg)](https://www.youtube.com/watch?v=d1BQwCND6-o)
+
 ## Features
 
 ### Customer Storefront
