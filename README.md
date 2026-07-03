@@ -28,15 +28,15 @@ This is a full-stack e-commerce web application which provides a seamless shoppi
 ## Installation & Setup
 
 ### 1. Clone the repository
-\`\`\`bash
+```bash
 git clone https://github.com/ChisengaSol/atelier-project.git
 cd atelier-project
-\`\`\`
+```
 
 ### 2. Backend Setup (Python)
 Navigate to your backend directory, set up your virtual environment, and install dependencies.
 
-\`\`\`bash
+```bash
 # Create the virtual environment
 python -m venv myenv
 
@@ -48,41 +48,41 @@ source myenv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3. Frontend Setup (React)
 Navigate to your frontend directory and install the Node modules.
 
-\`\`\`bash
+```bash
 npm install
-\`\`\`
+```
 
 ### 4. Environment Variables & Database
 Create a `.env` file in the root of your backend and frontend directories. 
 
 Example backend `.env` variables:
-\`\`\`env
+```env
 DATABASE_URL=postgresql://user:password@localhost:5432/your_database
 SECRET_KEY=your_secret_key
-\`\`\`
+```
 *Note: Ensure you have run the necessary SQL scripts or ORM migrations to set up your tables (users, orders, products, coupons, audit_logs, etc.).*
 
-## 🏃‍♂️ Running the Application
+## Running the Application
 
 **Start the Backend Server:**
 Ensure your virtual environment (`myenv`) is active, then run your Python server.
-\`\`\`bash
+```bash
 # Example for FastAPI:
 uvicorn main:app --reload --port 8000
-\`\`\`
+```
 
 **Start the Frontend Server:**
 Open a new terminal window, navigate to your frontend directory, and start the React app.
-\`\`\`bash
+```bash
 npm run dev
-\`\`\`
+```
 
-## 🌐 Usage
+## Usage
 Once both servers are running, open your browser:
 - **Storefront:** Navigate to `http://localhost:5173` (or your frontend port) to access the customer shopping experience.
 - **Admin Panel:** Navigate to the protected `/admin` routes and log in with your administrative credentials to manage the platform.
